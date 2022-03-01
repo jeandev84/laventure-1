@@ -1,5 +1,6 @@
 <?php
-use Laventure\Component\Http\Response\Response;
+
+use Laventure\Component\Http\Request\Request;
 use Laventure\Foundation\Facade\Routing\Route;
 
 
@@ -11,19 +12,15 @@ use Laventure\Foundation\Facade\Routing\Route;
 
 
 
+/*
+Example routes :
+
+Route::get('/welcome', function (Request $request) {
+    return "Welcome to Laventure.";
+});
+
 Route::get('/', 'SiteController@home', 'homepage');
 Route::get('/about', 'SiteController@about', 'about');
 Route::map('GET|POST', '/contact', 'SiteController@contact', 'contact');
 
-
-
-$options = [
-    'prefix' => 'admin/',
-    'module' => 'Admin\\',
-    'name'   => 'admin.'
-];
-
-Route::group(function () {
-    Route::get('/', 'DashboardController@index', 'dashboard');
-    Route::get('/users', 'UserController@index', 'users');
-}, $options);
+*/

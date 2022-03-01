@@ -38,7 +38,8 @@ Laventure is a web application framework using architecture mvc with simple impl
 ```
 
 4. Configure your `.env` file like it :
-- You can connect database to mysql/postgres/sqlite
+- Configuration application
+- Connection to mysql|postgres|sqlite database
 ```
 ### APPLICATION ###
 

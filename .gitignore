@@ -1,0 +1,12 @@
+.env
+.env.local
+.idea/
+/vendor
+/public/uploads
+/public/bundles
+/storage/cache/framework
+/storage/cache/app
+/storage/log
+/storage/docs/*
+/references
+/framework

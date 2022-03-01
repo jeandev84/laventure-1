@@ -1,0 +1,42 @@
+#!/usr/bin/env php
+<?php
+
+/*
+|--------------------------------------------------------------------------------------------------------
+|   Laventure Console application
+|   Ex: $ php console                   (By default argument give list of commands)
+|   Ex: $ php console list              (List all available application commands)
+|   Ex: $ php console --help/-h         (Take help)
+|   Ex: $ php console generate:key      (Generate a new key APP_SECRET inside .env)
+|   Ex: $ php console make:command      app:my:fake-command (Create a new command)
+|   Ex: $ php console make:controller   SiteController (Make controller)
+|   Ex: $ php console make:controller   FrontController -a=index,about,news,contact
+|   Ex: $ php console make:controller   Admin/UserController -a=list,create...
+|   Ex: $ php console make:controller   DemoController --resource (make resource)
+|   Ex: $ php console make:controller   DemoController -actions=index,about,contact,portfolio
+|   Ex: $ php console make:model  User
+|   Ex: $ php console make:entity Cart
+|   Ex: $ php console make:resource Product --api     (for making rest api)
+|   Ex: $ php console make:resource Product           (for simple web resource)
+|   Ex: $ php console server:run                      (run local  server php on port :8000 by default)
+|---------------------------------------------------------------------------------------------------------
+*/
+
+require(__DIR__ . '/vendor/autoload.php');
+
+$app = require(__DIR__ . '/bootstrap/app.php');
+
+$kernel = $app->get(\Laventure\Contract\Console\Kernel::class);
+
+$status = $kernel->handle(
+    $input = new \Laventure\Component\Console\Input\ConsoleInputArg(),
+    new \Laventure\Component\Console\Output\ConsoleOutput()
+);
+
+
+$kernel->terminate($input, $status);
+
+exit($status);
+
+
+

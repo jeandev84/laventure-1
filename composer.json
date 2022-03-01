@@ -21,8 +21,7 @@
     },
     "autoload": {
       "psr-4": {
-        "App\\": "app/",
-        "Laventure\\": "framework/src"
+        "App\\": "app/"
       }
     }
 }

@@ -4,8 +4,8 @@
 /vendor
 /public/uploads
 /public/bundles
-/storage/cache/framework
-/storage/cache/app
+/storage/temp/cache/framework
+/storage/temp/cache/app
 /storage/log
 /storage/docs/*
 /references

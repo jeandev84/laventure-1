@@ -1,0 +1,4 @@
+[2022-03-02 16:47:08] Текст ошибки: SQL : INSERT INTO users () VALUES (:), Message : SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO users () VALUES (:)
+                           ^ | Файл: 444 | Строка: 444
+=============

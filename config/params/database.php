@@ -19,7 +19,7 @@ return [
     'prefix'     => '',
     'engine'     => 'MyISAM', // InnoDB
     'options'    => [
-        'commands' => 'SET SQL_MODE=ANSI_QUOTES'
+        // add your options
     ],
     'migration_path' => 'database/migrations/' // specific for model
 ];
